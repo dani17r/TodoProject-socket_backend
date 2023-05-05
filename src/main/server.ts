@@ -6,10 +6,20 @@ import koa from "koa";
 //Importaciones Internas
 import { connectDB } from "@main/database";
 import config from "@main/config";
+import { readFile } from "node:fs/promises";
+var serve = require("koa-static");
 import run from "@main/run";
+import path from "path";
 
 //init
 const app = new koa();
+
+app.use(serve("./public"));
+
+app.use(async (ctx) => {
+  ctx.set("Content-Type", "text/html");
+  ctx.body = await readFile("./public/index.html");
+});
 
 // Connection
 connectDB();

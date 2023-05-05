@@ -1,0 +1,1 @@
+import{C as e,h as o,n as t,p as n}from"./index-d8e57e78.js";const s={},c={fill:"none",viewBox:"0 0 24 24","stroke-width":"1.5",stroke:"currentColor",class:"w-6 h-6"},r=n("path",{"stroke-linecap":"round","stroke-linejoin":"round",d:"M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"},null,-1),a=[r];function _(l,i){return o(),t("svg",c,a)}const h=e(s,[["render",_]]);export{h as default};
